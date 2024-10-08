@@ -1,0 +1,46 @@
+
+
+cd Downloads 
+
+Sudo chmod 755 xampp-linux-x64-8.2.4.0-installer rem
+
+→Password for mi: aids
+
+→ sudo/xampp-linux-x64-8-2-4-0-installer.run
+
+
+
+In Now terminal:
+
+cd /opt/Lamppl
+
+Ls
+
+cd htdocs/
+
+sudo mkdir mysite
+
+→ password formi: aids
+
+→ sudo chown -R $USER: $USER mysite
+
+cd mysite
+
+ code .
+
+In chrome
+
+localhost: 81/mysite.
+
+
+
+
+
+For reopening xampp server;
+
+
+
+
+→cd /opt/lampp
+
+Sudo •/ manager-linux-x64.run.

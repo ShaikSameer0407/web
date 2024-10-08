@@ -1,0 +1,82 @@
+Append in file
+
+
+
+appendFileSync method of fs append file asynchronously.
+Filename: Index.js
+
+
+const fs=require('fs');
+fs.appendFileSync('src/data.txt',"hello Node 1",'utf8',(err)=>{
+ if(err){
+ console.log(err)
+ }
+});
+fs.appendFileSync('src/data.txt',"hello Node 2",'utf8',(err)=>{
+ if(err){
+ console.log(err)
+ }
+});
+Output:
+Hello Node 1
+Hello Node 2
+
+
+appendFile
+appendFile method of fs append file synchronously.
+Filename: Index.js
+const fs=require('fs');
+fs.appendFile('src/data.txt',"hello Node 1",'utf8',(err)=>{
+ if(err){
+ console.log(err)
+ }
+});
+fs.appendFile('src/data.txt',"hello Node 2",'utf8',(err)=>{
+ if(err){
+ console.log(err)
+ }
+});
+Output:
+Hello Node 1
+Hello Node 2
+
+
+
+delete file
+To delete files, node js use fs.unlink or fs.unlinkSync methods.
+fs.unlinkSync
+
+
+ const fs=require('fs');
+ fs.unlinkSync('data.txt');
+
+
+ Filename: Index.js
+ const fs=require('fs');
+ try{
+ fs.unlinkSync('data.txt');
+ console.log('file deleted successfully');
+ }
+ catch(err){
+ console.log("Error",err);
+ }
+
+
+fs.unlink
+fs.unlink is a asynchronously method to delete file with two arguments. First is file name and
+second is callback function.
+
+
+Filename: Index.js
+ const fs=require('fs');
+ fs.unlink('data.txt',(err)=>{
+ if(err){
+ console.log('Error:', err);
+ }
+ else{
+ console.log('file deleted successfully');
+ }
+ })
+ 
+Output:
+file deleted successfully
